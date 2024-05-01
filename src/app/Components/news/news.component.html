@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="card col-12 col-lg-4" style="width: 18rem;" *ngFor="let newsItem of newsList">
+    <a [routerLink]="newsItem.id" class="text-decoration-none link-dark">
+      <img [src]="newsItem.imageUrl" alt="card__image" class="card__image" width="600">
+      <div class="card-body">
+        <p class="card-text">{{ newsItem.title }}</p>
+      </div>
+    </a>
+  </div>
+</div>
